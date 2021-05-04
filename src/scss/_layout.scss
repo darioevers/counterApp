@@ -1,3 +1,5 @@
+// LAYOUTS
+
 * {
   margin: 0;
   padding: 0;
@@ -9,21 +11,51 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 90vh;
-  width: 100vw;
+  margin-top: 6rem;
   background-color: black;
   color: white;
 }
-main {
+
+section {
+  margin-top: 2rem;
   width: 50vw;
-  height: 50vh;
-  line-height: 3rem;
+  border: 1px white solid;
+  padding: 6rem;
+  font-family: "Itim", cursive;
 }
+
+// WEBKITS
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3a3a3a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(98, 98, 98);
+}
+
+// FONTS
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+// FORMS, BUTTONS, INPUTS
+
 input {
   border: none;
   background-color: black;
   color: white;
   font-size: larger;
+  margin-top: 2rem;
 }
 input:focus {
   outline: none;
@@ -37,17 +69,14 @@ button {
 button:focus {
   outline: none;
 }
+
+// FOOTER
 footer {
+  margin-top: 2rem;
   width: 50vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
   font-size: smaller;
-}
-
-section {
-  border: 1px white solid;
-  padding: 6rem;
-  font-family: "Itim", cursive;
 }

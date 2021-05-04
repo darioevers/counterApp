@@ -4,8 +4,7 @@ const year = new Date().getFullYear();
 document.querySelector(".year").innerHTML = year;
 const date = new Date();
 const checkNow = document.querySelector("#checkNow");
-document.querySelector("#weekendtitle").innerHTML =
-  "Hey, This is the weekend finder app";
+document.querySelector("#weekendtitle").innerHTML = "WEEKEND FINDER";
 
 const getDayName = () => {
   return date.toLocaleDateString("en-EN", {
@@ -29,10 +28,14 @@ checkNow.addEventListener("click", weekend);
 
 // NUMBER CONVERTER
 
-document.querySelector("#convertertitle").innerHTML =
-  "Hey, This is the number converter app";
+document.querySelector("#convertertitle").innerHTML = "NUMBER CONVERTER";
 
 // BEFORE AFTER PICTURE
+document.querySelector("#beforeaftertitle").innerHTML = "BEFORE AFTER PICTURE";
+const image = document.querySelector(".foreground-img");
 
-document.querySelector("#weekendtitle").innerHTML =
-  "Hey, This is the weekend finder app";
+function imageslider(e) {
+  const sliderPos = document.querySelector("#slider").on("input change").target
+    .value;
+  image.style.width = sliderPos;
+}

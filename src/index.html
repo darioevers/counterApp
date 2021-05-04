@@ -15,30 +15,42 @@
   <body>
     <main>
       <!-- weekend finder  -->
-      <section class="weekend counter">
-      <h2 class="hey" id="weekendtitle"></h2>
-      <form action="">
-        <input type="text" id="userName" placeholder="Write your name" />
-        <button id="checkNow">Check now</button>
-      </form>
-      <div class="result"></div>
-    </main>
-    <hr>
-  </section>
+      <section class="weekend_counter">
+        <h2 class="hey" id="weekendtitle"></h2>
+        <form action="">
+          <input type="text" id="userName" placeholder="Write your name" />
+          <button id="checkNow">Check now</button>
+        </form>
+        <div class="result"></div>
+      </section>
       <!--number converter  -->
-      <section class="weekend counter">
+      <section class="number_converter">
         <h2 class="hey" id="convertertitle"></h2>
         <form action="">
           <input type="text" id="userName" placeholder="Write your name" />
           <button id="checkNow">Check now</button>
         </form>
         <div class="result"></div>
-      </main>
-      <hr>
-    </section>
-
+      </section>
+      <!--before after  -->
+      <section class="before_after">
+        <h2 class="hey" id="beforeaftertitle"></h2>
+        <div class="container">
+          <div class="img background-img"></div>
+          <div class="img foreground-img"></div>
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="50"
+            class="slider"
+            name="slider"
+            id="slider"
+          />
+        </div>
+      </section>
+    </main>
     <footer>
-      <div>Made with ❤️ by me</div>
       <div>Copyright ® <span class="year"></span></div>
     </footer>
     <script src="./scripts/index.js"></script>

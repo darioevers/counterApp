@@ -1,0 +1,47 @@
+.container {
+  position: relative;
+  width: 512px;
+  height: 30vh;
+  border: 2px solid white;
+  .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 512px 100%;
+  }
+  .background-img {
+    background-image: url(../images/vegetables.jpg);
+  }
+  .foreground-img {
+    background-image: url(../images/fruits.jpg);
+    width: 50%;
+  }
+}
+
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  position: absolute;
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(#f2f2f2, 0.1);
+  outline: none;
+  margin: 0;
+  transition: all 0.2s;
+  @include center;
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 6px;
+    height: 30vh;
+    background: white;
+    cursor: pointer;
+  }
+}
