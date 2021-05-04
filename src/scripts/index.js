@@ -1,19 +1,12 @@
+// WEEKEND COUNTER
+
 const year = new Date().getFullYear();
 document.querySelector(".year").innerHTML = year;
 const date = new Date();
 const checkNow = document.querySelector("#checkNow");
 document.querySelector("#weekendtitle").innerHTML =
   "Hey, This is the weekend finder app";
-document.querySelector("#convertertitle").innerHTML =
-  "Hey, This is the number converter app";
-document.querySelector("#weekendtitle").innerHTML =
-  "Hey, This is the weekend finder app";
-// const options = { weekday: 'long' };
 
-// console.log(event.toLocaleDateString('de-DE', options));
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString
-// "fr-FR"
-// https://meta.wikimedia.org/wiki/Template:List_of_language_names_ordered_by_code
 const getDayName = () => {
   return date.toLocaleDateString("en-EN", {
     weekday: "long",
@@ -33,3 +26,13 @@ function weekend(e) {
   }
 }
 checkNow.addEventListener("click", weekend);
+
+// NUMBER CONVERTER
+
+document.querySelector("#convertertitle").innerHTML =
+  "Hey, This is the number converter app";
+
+// BEFORE AFTER PICTURE
+
+document.querySelector("#weekendtitle").innerHTML =
+  "Hey, This is the weekend finder app";
