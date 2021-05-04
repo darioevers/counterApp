@@ -2,7 +2,12 @@ const year = new Date().getFullYear();
 document.querySelector(".year").innerHTML = year;
 const date = new Date();
 const checkNow = document.querySelector("#checkNow");
-document.querySelector("h2").innerHTML = "Hey, This is the weekend finder app";
+document.querySelector("#weekendtitle").innerHTML =
+  "Hey, This is the weekend finder app";
+document.querySelector("#convertertitle").innerHTML =
+  "Hey, This is the number converter app";
+document.querySelector("#weekendtitle").innerHTML =
+  "Hey, This is the weekend finder app";
 // const options = { weekday: 'long' };
 
 // console.log(event.toLocaleDateString('de-DE', options));

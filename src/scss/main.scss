@@ -15,7 +15,6 @@ body {
   color: white;
 }
 main {
-  font-family: "Itim", cursive;
   width: 50vw;
   height: 50vh;
   line-height: 3rem;
@@ -45,4 +44,10 @@ footer {
   align-items: center;
   flex-flow: column;
   font-size: smaller;
+}
+
+section {
+  border: 1px white solid;
+  padding: 6rem;
+  font-family: "Itim", cursive;
 }
