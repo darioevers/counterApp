@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Weekend Countdown</title>
+  </head>
+  <body>
+    <main>
+      <!-- weekend finder  -->
+      <section class="weekend_counter">
+        <h2 class="hey" id="weekendtitle"></h2>
+        <form action="">
+          <input type="text" id="userName" placeholder="Write your name" />
+          <button id="checkNow">Check now</button>
+        </form>
+        <div class="result"></div>
+      </section>
+      <!--number converter  -->
+      <section class="number_converter">
+        <h2 class="hey" id="convertertitle"></h2>
+        <form action="">
+          <input type="text" id="userName" placeholder="Write your name" />
+          <button id="checkNow">Check now</button>
+        </form>
+        <div class="result"></div>
+      </section>
+      <!--before after  -->
+      <section class="before_after">
+        <h2 class="hey" id="beforeaftertitle"></h2>
+        <div class="container">
+          <div class="img background-img"></div>
+          <div class="img foreground-img"></div>
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="50"
+            class="slider"
+            name="slider"
+            id="slider"
+          />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>Copyright ® <span class="year"></span></div>
+    </footer>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

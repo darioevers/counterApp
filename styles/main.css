@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 6rem;
+  background-color: black;
+  color: white;
+}
+
+section {
+  margin-top: 2rem;
+  width: 50vw;
+  border: 1px white solid;
+  padding: 6rem;
+  font-family: "Itim", cursive;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3a3a3a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #626262;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+input {
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: larger;
+  margin-top: 2rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: smaller;
+}
+
+button:focus {
+  outline: none;
+}
+
+footer {
+  margin-top: 2rem;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  font-size: smaller;
+}
+
+.container {
+  position: relative;
+  width: 512px;
+  height: 30vh;
+  border: 2px solid white;
+}
+.container .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 512px 100%;
+}
+.container .background-img {
+  background-image: url(../images/vegetables.jpg);
+}
+.container .foreground-img {
+  background-image: url(../images/fruits.jpg);
+  width: 50%;
+}
+
+.slider {
+  position: absolute;
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(242, 242, 242, 0.1);
+  outline: none;
+  margin: 0;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 6px;
+  height: 30vh;
+  background: white;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */
