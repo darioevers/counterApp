@@ -35,7 +35,6 @@ document.querySelector("#beforeaftertitle").innerHTML = "BEFORE AFTER PICTURE";
 const image = document.querySelector(".foreground-img");
 
 function imageslider(e) {
-  const sliderPos = document.querySelector("#slider").on("input change").target
-    .value;
+  const sliderPos = document.querySelector("#slider").on("input change").value;
   image.style.width = sliderPos;
 }
